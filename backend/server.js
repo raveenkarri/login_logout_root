@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "https://login-logout-root.vercel.app/",
+    origin: "https://login-logout-root.vercel.app",
     credentials: true,
   })
 );
