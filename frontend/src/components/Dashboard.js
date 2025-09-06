@@ -6,7 +6,7 @@ export default function Dashboard({ user, setUser }) {
   const navigate = useNavigate();
 
   const handleLogout = async () => {
-    await axios.post("http://localhost:5000/api/logout");
+    await axios.post("https://login-logout-root.onrender.com/api/logout");
     setUser(null);
     navigate("/login");
   };

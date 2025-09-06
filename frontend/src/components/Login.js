@@ -10,7 +10,7 @@ export default function Login({ setUser }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/login", form);
+      const res = await axios.post("https://login-logout-root.onrender.com/api/login", form);
       setUser(res.data.user);
       navigate("/dashboard");
     } catch (err) {

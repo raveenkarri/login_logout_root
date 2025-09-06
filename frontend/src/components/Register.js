@@ -8,7 +8,7 @@ export default function Register() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/register", form);
+      await axios.post("https://login-logout-root.onrender.com/api/register", form);
       setMsg("✅ Registered successfully! Please login.");
     } catch (err) {
       setMsg("❌ Email already exists");

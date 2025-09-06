@@ -11,7 +11,7 @@ export default function App() {
   const [user, setUser] = useState(null);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/session").then((res) => {
+    axios.get("https://login-logout-root.onrender.com/api/session").then((res) => {
       if (res.data.loggedIn) setUser(res.data.user);
     });
   }, []);
